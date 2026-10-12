@@ -1,0 +1,1 @@
+{"checkpoint":"Qwen/Qwen3.5-9B","frozen":true,"generation":{"do_sample":false,"max_new_tokens":16},"output_contract":"one_candidate_id"}

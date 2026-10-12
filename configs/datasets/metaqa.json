@@ -1,0 +1,1 @@
+{"name":"MetaQA-3hop","converter":"metaqa","source":"WikiMovies","format":"question-answer sets","split_mode":"official","hops":3}

@@ -1,0 +1,1 @@
+{"checkpoint":"meta-llama/Llama-3.1-8B-Instruct","frozen":true,"generation":{"do_sample":false,"max_new_tokens":16},"output_contract":"one_candidate_id"}

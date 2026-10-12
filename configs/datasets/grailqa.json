@@ -1,0 +1,1 @@
+{"name":"GrailQA","converter":"grailqa","source":"Freebase","format":"question-answer sets","split_mode":"public_development","strata":["iid","compositional","zero_shot"]}

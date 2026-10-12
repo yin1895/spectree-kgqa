@@ -1,0 +1,63 @@
+{
+  "method": "SpecTree",
+  "drafter": {
+    "checkpoint": "Qwen/Qwen3-Embedding-0.6B",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "temperature": 0.07,
+    "max_depth": 4,
+    "relation_k": 8,
+    "beam_width": 32,
+    "bootstrap_k": 4,
+    "expand_quanta": 8,
+    "expand_batch_cap": 2
+  },
+  "reader": {
+    "checkpoint": "Qwen/Qwen3.5-9B",
+    "max_new_tokens": 16,
+    "greedy": true
+  },
+  "scheduling": {
+    "encoding": "shared",
+    "mode": "adaptive",
+    "k_max": 32,
+    "token_cap": 2048,
+    "time_target_ms": 550,
+    "candidate_weight": 0.5,
+    "exploration_floor": 0.25,
+    "max_trials": 128
+  },
+  "experiments": {
+    "seeds": [
+      17,
+      42,
+      73
+    ],
+    "encodings": [
+      "flat",
+      "dictionary",
+      "shared"
+    ],
+    "allocations": [
+      "fixed",
+      "adaptive"
+    ],
+    "profiles": {
+      "Fast": 400,
+      "Balanced": 550,
+      "Wide": 800
+    }
+  },
+  "evaluation": {
+    "metrics": [
+      "set_hit",
+      "macro_set_f1"
+    ],
+    "grailqa_dev_sample": {
+      "iid": 200,
+      "compositional": 250,
+      "zero_shot": 550
+    }
+  }
+}

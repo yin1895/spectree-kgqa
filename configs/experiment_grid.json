@@ -1,0 +1,34 @@
+{
+  "benchmark_families": [
+    "WebQSP",
+    "CWQ",
+    "GrailQA",
+    "MetaQA-3hop"
+  ],
+  "encoding_controls": [
+    "flat",
+    "dictionary",
+    "shared"
+  ],
+  "allocation_controls": [
+    "fixed",
+    "adaptive"
+  ],
+  "readers": [
+    "Qwen3.5-9B",
+    "Qwen2.5-7B-Instruct",
+    "Llama-3.1-8B-Instruct"
+  ],
+  "fixed_bank": {
+    "conditions": [
+      "full_evidence",
+      "2048_input_tokens"
+    ]
+  },
+  "stress_tests": [
+    "overlap_strata",
+    "time_budget",
+    "allocation_weights",
+    "path_depth"
+  ]
+}

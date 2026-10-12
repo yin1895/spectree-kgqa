@@ -1,0 +1,44 @@
+{
+  "triples": [
+    [
+      "Mira",
+      "studied_at",
+      "University of Oxford"
+    ],
+    [
+      "University of Oxford",
+      "located_in",
+      "Oxford"
+    ],
+    [
+      "Oxford",
+      "in_country",
+      "United Kingdom"
+    ],
+    [
+      "University of Oxford",
+      "academic_partner",
+      "University of Toronto"
+    ],
+    [
+      "University of Toronto",
+      "in_country",
+      "Canada"
+    ],
+    [
+      "Mira",
+      "born_in",
+      "Paris"
+    ],
+    [
+      "Paris",
+      "in_country",
+      "France"
+    ],
+    [
+      "Mira",
+      "graduated_from",
+      "University of Oxford"
+    ]
+  ]
+}
